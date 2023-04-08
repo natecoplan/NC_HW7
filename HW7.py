@@ -1,7 +1,7 @@
 
-# Your name:
-# Your student id:
-# Your email:
+# Your name: Nathan Coplan
+# Your student id: 0859-4516
+# Your email: ncoplan@umich.edu
 # List who you have worked with on this project:
 
 import unittest
@@ -283,17 +283,13 @@ class TestAllMethods(unittest.TestCase):
         self.assertEqual(c, [('Teden Mengi', 'Defence', 2002)])
     
     # test extra credit
-   # def test_make_winners_table(self):
-        #self.cur2.execute('SELECT * from Winners')
-        #winners_list = self.cur2.fetchall()
+   def test_make_winners_table(self):
+        self.cur2.execute('SELECT * from Winners')
+        winners_list = self.cur2.fetchall()
 
-       # pass
-
-    #def test_make_seasons_table(self):
-       # self.cur2.execute('SELECT * from Seasons')
-       # seasons_list = self.cur2.fetchall()
-
-       # pass
+    def test_make_seasons_table(self):
+       self.cur2.execute('SELECT * from Seasons')
+       seasons_list = self.cur2.fetchall()
 
     #def test_winners_since_search(self):
 
